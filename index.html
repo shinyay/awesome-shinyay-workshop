@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shinyay Workshop Hub — Curated Workshops & Tutorials</title>
+  <meta name="description" content="A curated collection of 60+ workshops and tutorials by shinyay — covering GitHub Copilot, AI/ML, Legacy Modernization, Cloud, Spring, and more.">
+  <meta property="og:title" content="Shinyay Workshop Hub">
+  <meta property="og:description" content="Curated workshops & tutorials by shinyay — GitHub Copilot, AI, Legacy Modernization, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shinyay.github.io/awesome-shinyay-workshop/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/@primer/css@22.1.0/dist/primer.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="#" class="nav-logo" aria-label="Home">
+        <svg class="nav-logo-icon" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+          <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v6h6V4H4zm10-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-6zm0 2h6v6h-6V4zM2 14a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6zm2 0v6h6v-6H4zm10-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-6zm0 2h6v6h-6v-6z"/>
+        </svg>
+        <span class="nav-title">Workshop Hub</span>
+      </a>
+      <div class="nav-links">
+        <a href="#workshops" class="nav-link">Workshops</a>
+        <a href="#tech-breakdown" class="nav-link">Technologies</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="https://github.com/shinyay" class="nav-link nav-link-external" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path></svg>
+          GitHub
+        </a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a1 1 0 0 1 1-1h.01a1 1 0 0 1 0 2H13a1 1 0 0 1-1-1zM5.64 5.64a1 1 0 0 1 1.41 0l.01.01a1 1 0 1 1-1.41 1.41l-.01-.01a1 1 0 0 1 0-1.41zM3 12a1 1 0 0 1-1-1v-.01a1 1 0 1 1 2 0V11a1 1 0 0 1-1 1zm2.64 6.36a1 1 0 0 1 0-1.41l.01-.01a1 1 0 1 1 1.41 1.41l-.01.01a1 1 0 0 1-1.41 0zM12 21a1 1 0 0 1-1 1h-.01a1 1 0 0 1 0-2H11a1 1 0 0 1 1 1zm6.36-2.64a1 1 0 0 1-1.41 0l-.01-.01a1 1 0 1 1 1.41-1.41l.01.01a1 1 0 0 1 0 1.41zM21 12a1 1 0 0 1 1 1v.01a1 1 0 0 1-2 0V13a1 1 0 0 1 1-1zm-2.64-6.36a1 1 0 0 1 0 1.41l-.01.01a1 1 0 1 1-1.41-1.41l.01-.01a1 1 0 0 1 1.41 0zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/></svg>
+        <svg class="theme-icon-light" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21.53 15.93c-.16-.27-.61-.69-1.73-.49a8.46 8.46 0 0 1-1.88.13 8.409 8.409 0 0 1-5.91-2.82 8.068 8.068 0 0 1-1.44-8.66c.44-1.01.13-1.54-.09-1.76s-.77-.55-1.83-.11a10.318 10.318 0 0 0-6.32 10.21 10.475 10.475 0 0 0 7.04 8.99 10 10 0 0 0 2.89.55c.16.01.32.02.48.02a10.5 10.5 0 0 0 8.47-4.27c.67-.93.49-1.519.32-1.79z"/></svg>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <img
+        src="https://github.com/shinyay.png"
+        alt="shinyay avatar"
+        class="hero-avatar"
+        width="120"
+        height="120"
+        loading="eager"
+      >
+      <h1 class="hero-title">
+        <span class="hero-title-line1">Shinyay</span>
+        <span class="hero-title-line2">Workshop Hub</span>
+      </h1>
+      <p class="hero-tagline">Curated collection of workshops, tutorials & hands-on labs<br>covering GitHub Copilot, AI, Cloud, and modern development.</p>
+      <div class="hero-stats" id="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-target="0" id="stat-workshops">0</span>
+          <span class="hero-stat-label">Workshops</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-target="7" id="stat-categories">0</span>
+          <span class="hero-stat-label">Categories</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-number" data-target="0" id="stat-languages">0</span>
+          <span class="hero-stat-label">Languages</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#workshops" class="btn-primary">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 2a.75.75 0 0 1 .75.75v4.5h4.5a.75.75 0 0 1 0 1.5h-4.5v4.5a.75.75 0 0 1-1.5 0v-4.5h-4.5a.75.75 0 0 1 0-1.5h4.5v-4.5A.75.75 0 0 1 8 2Z"/></svg>
+          Browse Workshops
+        </a>
+        <a href="https://github.com/shinyay" target="_blank" rel="noopener" class="btn-secondary">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+          GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search & Filters -->
+  <section class="filters-section" id="workshops">
+    <div class="filters-container">
+      <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search workshops by name, technology, topic..."
+          autocomplete="off"
+        >
+        <span class="search-count" id="search-count"></span>
+      </div>
+      <div class="filter-controls">
+        <div class="category-pills" id="category-pills">
+          <button class="pill active" data-category="all">
+            <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M2 4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4zm2 0v2h2V4H4zm6-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-2zm0 2h2v2h-2V4zM2 10a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2zm2 0v2h2v-2H4zm6-2a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2zm0 2h2v2h-2v-2z"/></svg>
+            All
+          </button>
+          <button class="pill" data-category="copilot-ai">
+            <span class="pill-dot" style="background:#8534F3"></span>
+            GitHub Copilot & AI
+          </button>
+          <button class="pill" data-category="legacy-modernization">
+            <span class="pill-dot" style="background:#da3633"></span>
+            Legacy Modernization
+          </button>
+          <button class="pill" data-category="github-platform">
+            <span class="pill-dot" style="background:#0969da"></span>
+            GitHub Platform
+          </button>
+          <button class="pill" data-category="ai-ml">
+            <span class="pill-dot" style="background:#1a7f37"></span>
+            AI & ML
+          </button>
+          <button class="pill" data-category="cloud-infra">
+            <span class="pill-dot" style="background:#bf8700"></span>
+            Cloud & Infra
+          </button>
+          <button class="pill" data-category="spring-java">
+            <span class="pill-dot" style="background:#0FBF3E"></span>
+            Spring / Java
+          </button>
+          <button class="pill" data-category="devops-containers">
+            <span class="pill-dot" style="background:#8a6534"></span>
+            DevOps & Containers
+          </button>
+        </div>
+        <div class="sort-controls">
+          <label for="sort-select" class="sort-label">Sort by</label>
+          <select id="sort-select" class="sort-select">
+            <option value="date-desc">Newest first</option>
+            <option value="date-asc">Oldest first</option>
+            <option value="stars-desc">Most stars</option>
+            <option value="name-asc">Name A→Z</option>
+            <option value="name-desc">Name Z→A</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshop Grid -->
+  <section class="workshops-grid-section">
+    <div class="workshops-container">
+      <div class="workshops-grid" id="workshops-grid">
+        <!-- Cards rendered by JavaScript -->
+      </div>
+      <div class="empty-state" id="empty-state" hidden>
+        <svg viewBox="0 0 24 24" width="48" height="48" fill="currentColor" opacity="0.4"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"/></svg>
+        <h3 class="empty-state-title">No workshops found</h3>
+        <p class="empty-state-text">Try adjusting your search or filter criteria.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Breakdown -->
+  <section class="tech-section" id="tech-breakdown">
+    <div class="tech-container">
+      <h2 class="section-title">
+        <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor"><path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"/></svg>
+        Technology Breakdown
+      </h2>
+      <div class="tech-bars" id="tech-bars">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <h2 class="section-title">
+        <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor"><path d="M10.561 8.073a6.005 6.005 0 0 1 3.432 5.142.75.75 0 1 1-1.498.07 4.5 4.5 0 0 0-8.99 0 .75.75 0 0 1-1.498-.07 6.004 6.004 0 0 1 3.431-5.142 3.999 3.999 0 1 1 5.123 0ZM10.5 5a2.5 2.5 0 1 0-5 0 2.5 2.5 0 0 0 5 0Z"/></svg>
+        About
+      </h2>
+      <div class="about-content">
+        <img
+          src="https://github.com/shinyay.png"
+          alt="shinyay"
+          class="about-avatar"
+          width="80"
+          height="80"
+          loading="lazy"
+        >
+        <div class="about-text">
+          <h3 class="about-name">Shinya Yanagihara <span class="about-handle">@shinyay</span></h3>
+          <p class="about-bio">Developer Advocate passionate about developer experience, AI-assisted development, and cloud-native technologies. Building workshops and tutorials to help developers learn and grow.</p>
+          <div class="about-links">
+            <a href="https://github.com/shinyay" target="_blank" rel="noopener" class="about-link">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+              GitHub
+            </a>
+            <a href="https://bsky.app/profile/yanashin.bsky.social" target="_blank" rel="noopener" class="about-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.785 2.627 3.573 3.492 6.128 3.182-4.529.556-8.522 1.684-3.199 5.881C7.74 23.093 11.09 18.135 12 15.75c.91 2.386 3.433 6.553 8.447 3.56 5.323-4.197 1.33-5.325-3.199-5.881 2.555.31 5.343-.555 6.128-3.182.246-.828.624-5.788.624-6.479 0-.688-.139-1.86-.902-2.203-.659-.299-1.664-.621-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+              Bluesky
+            </a>
+            <a href="https://www.linkedin.com/in/yanashin/" target="_blank" rel="noopener" class="about-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://mastodon.social/@yanashin" target="_blank" rel="noopener" class="about-link">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.547c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054 19.648 19.648 0 0 0 4.636.536c.562 0 1.124-.015 1.677-.056 1.935-.138 4-.438 4.867-1.508-.003-.006-.005-.012-.006-.019 1.033-1.413 1.395-3.293 1.55-4.887.014-.138.023-.274.028-.408.107-2.75.096-5.493-.067-8.236z"/></svg>
+              Mastodon
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-text">© 2026 shinyay — Built with ❤️ on GitHub</span>
+      </div>
+      <div class="footer-right">
+        <a href="https://github.com/shinyay/awesome-shinyay-workshop" target="_blank" rel="noopener" class="footer-link">Source Code</a>
+        <span class="footer-divider">·</span>
+        <a href="#hero" class="footer-link">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M3.22 9.78a.749.749 0 0 1 0-1.06l4.25-4.25a.749.749 0 0 1 1.06 0l4.25 4.25a.749.749 0 1 1-1.06 1.06L8 6.06 4.28 9.78a.749.749 0 0 1-1.06 0Z"/></svg>
+  </button>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
