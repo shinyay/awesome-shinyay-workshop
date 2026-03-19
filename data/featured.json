@@ -1,0 +1,112 @@
+[
+  {
+    "id": "agentic-github-workshop",
+    "title": "Agentic GitHub Workshop",
+    "subtitle": "6-Layer Architecture × 3 Surfaces",
+    "description": "Master GitHub Copilot's 6-layer agentic architecture through hands-on exercises across three surfaces — GitHub.com, VS Code, and Copilot CLI. Build with a FastAPI Todo API and watch Copilot autonomously fix intentional gaps.",
+    "pages_url": "https://shinyay.github.io/agentic-github-workshop/",
+    "repo_url": "https://github.com/shinyay/agentic-github-workshop",
+    "language": "Python",
+    "difficulty": "Intermediate",
+    "duration": "~2 hours",
+    "total_steps": 10,
+    "chapters": "10 chapters across 2 Acts",
+    "key_skills": ["Coding Agent", "Mission Control", "Code Review", "VS Code Agent Mode", "Copilot CLI", "Custom Instructions"],
+    "highlights": [
+      "Cloud-side autonomous Agent via Issues & PRs",
+      "Real-time interactive VS Code Agent Mode",
+      "Hybrid relay: CLI → Cloud → VS Code",
+      "Cross-surface consistency proof"
+    ],
+    "icon": "🤖",
+    "accent": "#8534F3"
+  },
+  {
+    "id": "getting-started-with-agent-framework",
+    "title": "Agent Framework Workshop",
+    "subtitle": "Build Autonomous Coding Agents",
+    "description": "Explore the AI Agent Framework for building autonomous coding agents. Learn infrastructure setup, demo scenarios, and how agents plan, execute, and iterate on code changes.",
+    "pages_url": "https://shinyay.github.io/getting-started-with-agent-framework/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-agent-framework",
+    "language": "Python",
+    "difficulty": "Intermediate",
+    "duration": "~2 hours",
+    "total_steps": 16,
+    "chapters": "16 exercises across infrastructure & demos",
+    "key_skills": ["Agent Framework", "Infrastructure Setup", "Demo Scenarios", "Cheat Sheets", "Agent Lifecycle"],
+    "highlights": [
+      "Agent infrastructure from scratch",
+      "6 interactive demo scenarios",
+      "Step-by-step cheat sheets",
+      "Production-ready agent patterns"
+    ],
+    "icon": "⚙️",
+    "accent": "#1a7f37"
+  },
+  {
+    "id": "getting-started-with-spec-kit-v0.3.0",
+    "title": "Spec Kit Workshop",
+    "subtitle": "Specification-Driven Development",
+    "description": "Master Specification-Driven Development (SDD) with GitHub Copilot Spec Kit. Work through 18 real-world scenarios across 4 difficulty levels — from basic CRUD to expert-level distributed systems.",
+    "pages_url": "https://shinyay.github.io/getting-started-with-spec-kit-v0.3.0/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-spec-kit-v0.3.0",
+    "language": "Markdown/SDD",
+    "difficulty": "Beginner → Expert",
+    "duration": "90–120 min/scenario",
+    "total_steps": 18,
+    "chapters": "18 scenarios across 4 difficulty tiers",
+    "key_skills": ["Spec Kit", "SDD Workflow", "Design Docs", "Acceptance Criteria", "Multi-Agent Decomposition"],
+    "highlights": [
+      "18 real-world SDD scenarios",
+      "4 difficulty tiers (Beginner → Expert)",
+      "Answer keys for every scenario",
+      "Facilitator guide for workshops"
+    ],
+    "icon": "📋",
+    "accent": "#bf8700"
+  },
+  {
+    "id": "getting-started-with-copilot-cli-v0.0.411",
+    "title": "Copilot CLI Workshop",
+    "subtitle": "Terminal-First AI Development",
+    "description": "Get hands-on with GitHub Copilot in the CLI. Learn to use Copilot for code explanation, shell command generation, Git operations, and terminal-first development workflows.",
+    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-cli-v0.0.411/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-cli-v0.0.411",
+    "language": "Shell",
+    "difficulty": "Beginner",
+    "duration": "~1 hour",
+    "total_steps": 5,
+    "chapters": "5 step-by-step exercises",
+    "key_skills": ["Copilot CLI", "Shell Commands", "Code Explanation", "Git Workflows", "Terminal Productivity"],
+    "highlights": [
+      "Install and configure Copilot CLI",
+      "Natural language → shell commands",
+      "Code explanation in terminal",
+      "AI-assisted Git workflows"
+    ],
+    "icon": "💻",
+    "accent": "#0969da"
+  },
+  {
+    "id": "getting-started-with-copilot-sdk-v0.1.32",
+    "title": "Copilot SDK Workshop",
+    "subtitle": "Build Copilot Extensions",
+    "description": "A progressive 8-level curriculum teaching the GitHub Copilot Extensions SDK with TypeScript and Node.js. From basic connections to production-ready agents with tools, hooks, and MCP integration.",
+    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-sdk-v0.1.32/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.1.32",
+    "language": "TypeScript",
+    "difficulty": "Beginner → Expert",
+    "duration": "12–15 hours",
+    "total_steps": 8,
+    "chapters": "8 progressive levels, 96 exercises",
+    "key_skills": ["Copilot Extensions SDK", "TypeScript", "Tool Integration", "Lifecycle Hooks", "MCP Protocol", "Production Patterns"],
+    "highlights": [
+      "96 exercises across 8 levels",
+      "2,720-line conceptual guide",
+      "Progressive: Connect → Stream → Tools → Production",
+      "MCP protocol integration"
+    ],
+    "icon": "🧩",
+    "accent": "#da3633"
+  }
+]
