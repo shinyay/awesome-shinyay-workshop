@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic DevSecOps Series — Workshop Collection by shinyay</title>
+  <meta name="description" content="A 4-workshop series covering Trust Boundary, Secure by Design, Supply Chain Integrity, and Operational Response — DevSecOps for the AI-native era.">
+  <meta property="og:title" content="Agentic DevSecOps Series">
+  <meta property="og:description" content="Securing the Entire Delivery System for the AI-Native Era — 4 workshops, 12 exercises, NIST SSDF aligned.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shinyay.github.io/awesome-shinyay-workshop/agentic-devsecops">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/devsecops.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Home">
+        <svg class="nav-logo-icon" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+          <path d="M9.585 11.692h4.328s2.432.942 2.432 2.568V18H7.153v-3.74s0-1.626 2.432-2.568zM11.749 2.008a3.32 3.32 0 1 0 0 6.64 3.32 3.32 0 0 0 0-6.64z"/>
+          <path opacity="0.5" d="M5.033 7.397a2.643 2.643 0 1 0 0 5.287 2.643 2.643 0 0 0 0-5.287zM18.467 7.397a2.643 2.643 0 1 0 0 5.287 2.643 2.643 0 0 0 0-5.287z"/>
+          <path opacity="0.5" d="M3.438 14.737C1.619 15.48 1.5 16.9 1.5 16.9V20h5.153v-3.583c0-.607.26-1.357.808-1.981a5.208 5.208 0 0 0-.885-.388 7.413 7.413 0 0 0-3.138-.31zM20.062 14.737c1.82.743 1.938 2.163 1.938 2.163V20h-5.153v-3.583c0-.607-.26-1.357-.808-1.981.275-.164.568-.293.885-.388a7.413 7.413 0 0 1 3.138-.31z"/>
+        </svg>
+        <span class="nav-title">Workshop Collection</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">← Hub</a>
+        <a href="#overview" class="nav-link">Overview</a>
+        <a href="#workshops" class="nav-link">Workshops</a>
+        <a href="#artifacts" class="nav-link">Artifacts</a>
+        <a href="#takeaways" class="nav-link">Takeaways</a>
+        <a href="https://github.com/shinyay" class="nav-link nav-link-external" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="theme-icon-dark" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 3a1 1 0 0 1 1-1h.01a1 1 0 0 1 0 2H13a1 1 0 0 1-1-1zM5.64 5.64a1 1 0 0 1 1.41 0l.01.01a1 1 0 1 1-1.41 1.41l-.01-.01a1 1 0 0 1 0-1.41zM3 12a1 1 0 0 1-1-1v-.01a1 1 0 1 1 2 0V11a1 1 0 0 1-1 1zm2.64 6.36a1 1 0 0 1 0-1.41l.01-.01a1 1 0 1 1 1.41 1.41l-.01.01a1 1 0 0 1-1.41 0zM12 21a1 1 0 0 1-1 1h-.01a1 1 0 0 1 0-2H11a1 1 0 0 1 1 1zm6.36-2.64a1 1 0 0 1-1.41 0l-.01-.01a1 1 0 1 1 1.41-1.41l.01.01a1 1 0 0 1 0 1.41zM21 12a1 1 0 0 1 1 1v.01a1 1 0 0 1-2 0V13a1 1 0 0 1 1-1zm-2.64-6.36a1 1 0 0 1 0 1.41l-.01.01a1 1 0 1 1-1.41-1.41l.01-.01a1 1 0 0 1 1.41 0zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10z"/></svg>
+        <svg class="theme-icon-light" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M21.53 15.93c-.16-.27-.61-.69-1.73-.49a8.46 8.46 0 0 1-1.88.13 8.409 8.409 0 0 1-5.91-2.82 8.068 8.068 0 0 1-1.44-8.66c.44-1.01.13-1.54-.09-1.76s-.77-.55-1.83-.11a10.318 10.318 0 0 0-6.32 10.21 10.475 10.475 0 0 0 7.04 8.99 10 10 0 0 0 2.89.55c.16.01.32.02.48.02a10.5 10.5 0 0 0 8.47-4.27c.67-.93.49-1.519.32-1.79z"/></svg>
+      </button>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="dso-hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.835c1.112 0 1.801 1.198 1.235 2.148L9.38 15.963a1.516 1.516 0 0 1-2.437-1.713L8.502 10.5H5.667c-1.112 0-1.801-1.198-1.235-2.148L9.504.43Z"/></svg>
+        Agentic DevSecOps · 4-Workshop Series
+      </div>
+      <h1 class="hero-title">
+        <span class="dso-hero-title-gradient">Agentic DevSecOps</span>
+      </h1>
+      <p class="hero-tagline">
+        Securing the Entire Delivery System for the AI-Native Era
+      </p>
+      <blockquote class="dso-hero-quote">
+        "DevSecOps in the AI-native era is not only about shifting security left. It is about securing the entire delivery system."
+      </blockquote>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-number">4</span>
+          <span class="hero-stat-label">Workshops</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">12</span>
+          <span class="hero-stat-label">Exercises</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-number">2–3</span>
+          <span class="hero-stat-label">Hours Total</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="https://shinyay.github.io/agentic-devsecops-trust-boundry/" target="_blank" rel="noopener" class="btn-primary">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"/></svg>
+          Start Workshop 1
+        </a>
+        <a href="index.html" class="btn-secondary">
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M7.78 12.53a.75.75 0 0 1-1.06 0L2.47 8.28a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L4.81 7h7.44a.75.75 0 0 1 0 1.5H4.81l2.97 2.97a.75.75 0 0 1 0 1.06Z"/></svg>
+          Back to Workshop Collection
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Series Overview -->
+  <section class="dso-overview" id="overview">
+    <div class="dso-overview-container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor"><path d="M8.22 2.97a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l2.97-2.97H3.75a.75.75 0 0 1 0-1.5h7.44L8.22 4.03a.75.75 0 0 1 0-1.06Z"/></svg>
+          One Question Per Workshop
+        </h2>
+        <p class="section-subtitle">Each workshop answers a single driving question. Together they form a closed-loop security operating model.</p>
+      </div>
+
+      <!-- Question Framework -->
+      <div class="dso-questions">
+        <div class="dso-question-card">
+          <div class="dso-question-ws">Workshop 1</div>
+          <div class="dso-question-text">"WHERE does development happen?"</div>
+          <span class="dso-question-label" style="background:rgba(46,160,67,0.12);color:#2ea043;">Foundation</span>
+        </div>
+        <div class="dso-question-card">
+          <div class="dso-question-ws">Workshop 2</div>
+          <div class="dso-question-text">"WHAT prevents bad code?"</div>
+          <span class="dso-question-label" style="background:rgba(191,135,0,0.12);color:#bf8700;">Prevention</span>
+        </div>
+        <div class="dso-question-card">
+          <div class="dso-question-ws">Workshop 3</div>
+          <div class="dso-question-text">"HOW do we trust the pipeline?"</div>
+          <span class="dso-question-label" style="background:rgba(9,105,218,0.12);color:#0969da;">Integrity</span>
+        </div>
+        <div class="dso-question-card">
+          <div class="dso-question-ws">Workshop 4</div>
+          <div class="dso-question-text">"WHAT when things go wrong?"</div>
+          <span class="dso-question-label" style="background:rgba(133,52,243,0.12);color:#8534f3;">Resilience</span>
+        </div>
+      </div>
+
+      <!-- Visual Flow -->
+      <div class="dso-flow">
+        <div class="dso-flow-item">
+          <div class="dso-flow-icon" style="border-color:#2ea043;color:#2ea043;">🛡️</div>
+          <span class="dso-flow-label">Trust</span>
+        </div>
+        <span class="dso-flow-arrow">→</span>
+        <div class="dso-flow-item">
+          <div class="dso-flow-icon" style="border-color:#bf8700;color:#bf8700;">🔒</div>
+          <span class="dso-flow-label">Guardrails</span>
+        </div>
+        <span class="dso-flow-arrow">→</span>
+        <div class="dso-flow-item">
+          <div class="dso-flow-icon" style="border-color:#0969da;color:#0969da;">🔗</div>
+          <span class="dso-flow-label">Integrity</span>
+        </div>
+        <span class="dso-flow-arrow">→</span>
+        <div class="dso-flow-item">
+          <div class="dso-flow-icon" style="border-color:#8534f3;color:#8534f3;">🔄</div>
+          <span class="dso-flow-label">Response</span>
+        </div>
+        <span class="dso-flow-arrow">→</span>
+        <div class="dso-flow-item">
+          <div class="dso-flow-icon" style="border-color:#da3633;color:#da3633;">🔁</div>
+          <span class="dso-flow-label">Feedback</span>
+        </div>
+        <div class="dso-flow-copilot">
+          <span class="dso-flow-copilot-badge">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9.585 11.692h4.328s2.432.942 2.432 2.568V18H7.153v-3.74s0-1.626 2.432-2.568zM11.749 2.008a3.32 3.32 0 1 0 0 6.64 3.32 3.32 0 0 0 0-6.64z"/></svg>
+            GitHub Copilot — Cross-Cutting Agentic Layer
+          </span>
+        </div>
+      </div>
+
+      <!-- NIST SSDF Alignment -->
+      <div class="dso-nist">
+        <span class="dso-nist-label">NIST SSDF:</span>
+        <span class="dso-nist-badge nist-po">PO</span>
+        <span class="dso-nist-arrow">→</span>
+        <span class="dso-nist-badge nist-pw">PW</span>
+        <span class="dso-nist-arrow">→</span>
+        <span class="dso-nist-badge nist-ps">PS</span>
+        <span class="dso-nist-arrow">→</span>
+        <span class="dso-nist-badge nist-rv">RV</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshop Cards -->
+  <section class="dso-workshops" id="workshops">
+    <div class="dso-workshops-container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor"><path d="M2 1.75C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v12.5A1.75 1.75 0 0 1 12.25 16h-8.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25Zm1.5 1.5a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75ZM5.25 6.5a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75ZM5.25 9.5a.75.75 0 0 1 .75-.75h4a.75.75 0 0 1 0 1.5H6a.75.75 0 0 1-.75-.75Z"/></svg>
+          The Workshops
+        </h2>
+        <p class="section-subtitle">Four workshops, three exercises each. Build security into every layer of your delivery system.</p>
+      </div>
+
+      <div class="dso-card-grid">
+
+        <!-- Card 1 — Trust Boundary -->
+        <article class="dso-card">
+          <div class="dso-card-accent" style="background:linear-gradient(90deg,#2ea043,#2ea04388)"></div>
+          <div class="dso-card-header">
+            <div class="dso-card-icon">🛡️</div>
+            <div class="dso-card-header-text">
+              <div class="dso-card-ws-num">Workshop 1</div>
+              <h3 class="dso-card-title">Trust Boundary &amp; Platform Trust</h3>
+            </div>
+            <div class="dso-card-nist"><span class="nist-badge nist-po">PO</span></div>
+          </div>
+          <div class="dso-card-question">"WHERE does development happen?"</div>
+          <div class="dso-tech-badges">
+            <span class="tech-badge">Data Residency</span>
+            <span class="tech-badge">EMU</span>
+            <span class="tech-badge">GHE.com</span>
+            <span class="tech-badge">Copilot Policies</span>
+          </div>
+          <ol class="dso-exercises">
+            <li><span class="dso-exercise-num" style="background:rgba(46,160,67,0.12);color:#2ea043;">1</span> Explore Boundary</li>
+            <li><span class="dso-exercise-num" style="background:rgba(46,160,67,0.12);color:#2ea043;">2</span> Identity &amp; Access</li>
+            <li><span class="dso-exercise-num" style="background:rgba(46,160,67,0.12);color:#2ea043;">3</span> Copilot Enforcement</li>
+          </ol>
+          <div class="dso-card-footer">
+            <span class="dso-card-duration">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/></svg>
+              30–45 min
+            </span>
+            <a href="https://shinyay.github.io/agentic-devsecops-trust-boundry/" target="_blank" rel="noopener" class="dso-card-btn" style="background:#2ea043;color:#fff;">
+              Start Workshop →
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 2 — Secure by Design -->
+        <article class="dso-card">
+          <div class="dso-card-accent" style="background:linear-gradient(90deg,#bf8700,#bf870088)"></div>
+          <div class="dso-card-header">
+            <div class="dso-card-icon">🔒</div>
+            <div class="dso-card-header-text">
+              <div class="dso-card-ws-num">Workshop 2</div>
+              <h3 class="dso-card-title">Secure by Design Guardrails</h3>
+            </div>
+            <div class="dso-card-nist"><span class="nist-badge nist-pw">PW</span></div>
+          </div>
+          <div class="dso-card-question">"WHAT prevents bad code from landing?"</div>
+          <div class="dso-tech-badges">
+            <span class="tech-badge">GHAS</span>
+            <span class="tech-badge">CodeQL</span>
+            <span class="tech-badge">Push Protection</span>
+            <span class="tech-badge">Copilot Autofix</span>
+            <span class="tech-badge">Security Campaigns</span>
+          </div>
+          <ol class="dso-exercises">
+            <li><span class="dso-exercise-num" style="background:rgba(191,135,0,0.12);color:#bf8700;">1</span> Policy Guardrails</li>
+            <li><span class="dso-exercise-num" style="background:rgba(191,135,0,0.12);color:#bf8700;">2</span> Detection Guardrails</li>
+            <li><span class="dso-exercise-num" style="background:rgba(191,135,0,0.12);color:#bf8700;">3</span> AI Remediation</li>
+          </ol>
+          <div class="dso-card-footer">
+            <span class="dso-card-duration">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/></svg>
+              30–45 min
+            </span>
+            <a href="https://shinyay.github.io/agentic-devsecops-secure-by-design/" target="_blank" rel="noopener" class="dso-card-btn" style="background:#bf8700;color:#fff;">
+              Start Workshop →
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 3 — Supply Chain Integrity -->
+        <article class="dso-card">
+          <div class="dso-card-accent" style="background:linear-gradient(90deg,#0969da,#0969da88)"></div>
+          <div class="dso-card-header">
+            <div class="dso-card-icon">🔗</div>
+            <div class="dso-card-header-text">
+              <div class="dso-card-ws-num">Workshop 3</div>
+              <h3 class="dso-card-title">Supply Chain Integrity</h3>
+            </div>
+            <div class="dso-card-nist"><span class="nist-badge nist-ps">PS</span></div>
+          </div>
+          <div class="dso-card-question">"HOW do we trust the delivery path?"</div>
+          <div class="dso-tech-badges">
+            <span class="tech-badge">OIDC</span>
+            <span class="tech-badge">Artifact Attestation</span>
+            <span class="tech-badge">Defender for Cloud</span>
+          </div>
+          <ol class="dso-exercises">
+            <li><span class="dso-exercise-num" style="background:rgba(9,105,218,0.12);color:#0969da;">1</span> OIDC Deployment</li>
+            <li><span class="dso-exercise-num" style="background:rgba(9,105,218,0.12);color:#0969da;">2</span> Attestation &amp; Provenance</li>
+            <li><span class="dso-exercise-num" style="background:rgba(9,105,218,0.12);color:#0969da;">3</span> Code-to-Runtime Trace</li>
+          </ol>
+          <div class="dso-card-footer">
+            <span class="dso-card-duration">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/></svg>
+              30–45 min
+            </span>
+            <a href="https://shinyay.github.io/agentic-devsecops-supplychain-integrity/" target="_blank" rel="noopener" class="dso-card-btn" style="background:#0969da;color:#fff;">
+              Start Workshop →
+            </a>
+          </div>
+        </article>
+
+        <!-- Card 4 — Operational Response -->
+        <article class="dso-card">
+          <div class="dso-card-accent" style="background:linear-gradient(90deg,#8534f3,#8534f388)"></div>
+          <div class="dso-card-header">
+            <div class="dso-card-icon">🔄</div>
+            <div class="dso-card-header-text">
+              <div class="dso-card-ws-num">Workshop 4 — Grand Finale</div>
+              <h3 class="dso-card-title">Operational Response</h3>
+            </div>
+            <div class="dso-card-nist"><span class="nist-badge nist-rv">RV</span></div>
+          </div>
+          <div class="dso-card-question">"WHAT happens when things go wrong?"</div>
+          <div class="dso-tech-badges">
+            <span class="tech-badge">SRE Agent</span>
+            <span class="tech-badge">Copilot Coding Agent</span>
+            <span class="tech-badge">MTTR</span>
+            <span class="tech-badge">Feedback Loop</span>
+          </div>
+          <ol class="dso-exercises">
+            <li><span class="dso-exercise-num" style="background:rgba(133,52,243,0.12);color:#8534f3;">1</span> Incident Detection</li>
+            <li><span class="dso-exercise-num" style="background:rgba(133,52,243,0.12);color:#8534f3;">2</span> AI-Assisted Remediation</li>
+            <li><span class="dso-exercise-num" style="background:rgba(133,52,243,0.12);color:#8534f3;">3</span> Continuous Improvement</li>
+          </ol>
+          <div class="dso-card-footer">
+            <span class="dso-card-duration">
+              <svg viewBox="0 0 16 16" width="14" height="14" fill="currentColor"><path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"/></svg>
+              30–45 min
+            </span>
+            <a href="https://shinyay.github.io/agentic-devsecops-operational-response/" target="_blank" rel="noopener" class="dso-card-btn" style="background:#8534f3;color:#fff;">
+              Start Workshop →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cross-Workshop Artifacts -->
+  <section class="dso-artifacts" id="artifacts">
+    <div class="dso-artifacts-container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor"><path d="M3.75 1.5a.25.25 0 0 0-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25V6H9.75A1.75 1.75 0 0 1 8 4.25V1.5Zm5.75 0v2.75c0 .138.112.25.25.25h2.75L9.5 1.5ZM2 1.75C2 .784 2.784 0 3.75 0h5.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v8.586A1.75 1.75 0 0 1 12.25 15h-8.5A1.75 1.75 0 0 1 2 13.25Z"/></svg>
+          Cross-Workshop Artifacts
+        </h2>
+        <p class="section-subtitle">Three living documents thread across all four workshops, building incrementally as you progress.</p>
+      </div>
+
+      <div class="dso-artifact-timeline">
+        <div class="dso-artifact-item">
+          <div class="dso-artifact-dot">📄</div>
+          <div class="dso-artifact-content">
+            <div class="dso-artifact-name">.github/copilot-instructions.md</div>
+            <div class="dso-artifact-flow">
+              <span class="dso-artifact-tag" style="border-color:rgba(46,160,67,0.3);color:#2ea043;">Created WS1</span>
+              <span class="dso-artifact-arrow">→</span>
+              <span class="dso-artifact-tag" style="border-color:rgba(133,52,243,0.3);color:#8534f3;">Updated WS4</span>
+            </div>
+          </div>
+        </div>
+        <div class="dso-artifact-item">
+          <div class="dso-artifact-dot">📋</div>
+          <div class="dso-artifact-content">
+            <div class="dso-artifact-name">THREAT-MODEL.md</div>
+            <div class="dso-artifact-flow">
+              <span class="dso-artifact-tag" style="border-color:rgba(191,135,0,0.3);color:#bf8700;">Created WS2</span>
+              <span class="dso-artifact-arrow">→</span>
+              <span class="dso-artifact-tag" style="border-color:rgba(9,105,218,0.3);color:#0969da;">Updated WS3</span>
+              <span class="dso-artifact-arrow">→</span>
+              <span class="dso-artifact-tag" style="border-color:rgba(133,52,243,0.3);color:#8534f3;">Extended WS4</span>
+            </div>
+          </div>
+        </div>
+        <div class="dso-artifact-item">
+          <div class="dso-artifact-dot">📊</div>
+          <div class="dso-artifact-content">
+            <div class="dso-artifact-name">MTTR-TRACKER.md</div>
+            <div class="dso-artifact-flow">
+              <span class="dso-artifact-tag" style="border-color:rgba(133,52,243,0.3);color:#8534f3;">Used in WS4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Takeaways -->
+  <section class="dso-takeaways" id="takeaways">
+    <div class="dso-takeaways-container">
+      <div class="section-header">
+        <h2 class="section-title">
+          <svg viewBox="0 0 16 16" width="24" height="24" fill="currentColor"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"/></svg>
+          Key Takeaways
+        </h2>
+      </div>
+
+      <div class="dso-takeaway-list">
+        <div class="dso-takeaway">
+          <span class="dso-takeaway-icon">🔐</span>
+          <span>DevSecOps is no longer only about shifting left.</span>
+        </div>
+        <div class="dso-takeaway">
+          <span class="dso-takeaway-icon">🌏</span>
+          <span>Data Residency defines the trust boundary of modern development.</span>
+        </div>
+        <div class="dso-takeaway">
+          <span class="dso-takeaway-icon">🤖</span>
+          <span>Copilot is the agentic layer that accelerates every security viewpoint.</span>
+        </div>
+        <div class="dso-takeaway">
+          <span class="dso-takeaway-icon">🔄</span>
+          <span>The winning model is: Trust → Guardrails → Visibility → Response → Feedback.</span>
+        </div>
+      </div>
+
+      <div class="dso-takeaway-closing">
+        <span class="dso-takeaway-closing-gradient">"Secure the delivery system, not only the code."</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-text">© 2026 shinyay — Built with ❤️ on GitHub</span>
+      </div>
+      <div class="footer-right">
+        <a href="index.html" class="footer-link">← Back to Workshop Collection</a>
+        <span class="footer-divider">·</span>
+        <a href="https://github.com/shinyay/agentic-devsecops-trust-boundry" target="_blank" rel="noopener" class="footer-link">WS1 Repo</a>
+        <span class="footer-divider">·</span>
+        <a href="https://github.com/shinyay/agentic-devsecops-secure-by-design" target="_blank" rel="noopener" class="footer-link">WS2 Repo</a>
+        <span class="footer-divider">·</span>
+        <a href="https://github.com/shinyay/agentic-devsecops-supplychain-integrity" target="_blank" rel="noopener" class="footer-link">WS3 Repo</a>
+        <span class="footer-divider">·</span>
+        <a href="https://github.com/shinyay/agentic-devsecops-operational-response" target="_blank" rel="noopener" class="footer-link">WS4 Repo</a>
+        <span class="footer-divider">·</span>
+        <a href="#hero" class="footer-link">Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top" hidden>
+    <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M3.22 9.78a.749.749 0 0 1 0-1.06l4.25-4.25a.749.749 0 0 1 1.06 0l4.25 4.25a.749.749 0 1 1-1.06 1.06L8 6.06 4.28 9.78a.749.749 0 0 1-1.06 0Z"/></svg>
+  </button>
+
+  <script>
+    // Theme toggle & navigation — standalone (matches public.js behavior)
+    (function() {
+      // Theme
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme'))
+          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        // Theme toggle
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+          const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          localStorage.setItem('theme', next);
+        });
+
+        // Hamburger menu
+        const hamburger = document.getElementById('nav-hamburger');
+        hamburger.addEventListener('click', () => {
+          hamburger.classList.toggle('active');
+          document.querySelector('.nav-links').classList.toggle('open');
+        });
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            document.querySelector('.nav-links').classList.remove('open');
+          });
+        });
+
+        // Back to top
+        const backToTop = document.getElementById('back-to-top');
+        backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+          if (!ticking) {
+            window.requestAnimationFrame(() => {
+              if (window.scrollY > 600) {
+                backToTop.hidden = false;
+                requestAnimationFrame(() => backToTop.classList.add('show'));
+              } else {
+                backToTop.classList.remove('show');
+                setTimeout(() => { if (!backToTop.classList.contains('show')) backToTop.hidden = true; }, 300);
+              }
+              ticking = false;
+            });
+            ticking = true;
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,5 +1,27 @@
 [
   {
+    "id": "agentic-devsecops-series",
+    "title": "Agentic DevSecOps Series",
+    "subtitle": "4 Workshops · Secure the Entire Delivery System",
+    "description": "A complete 4-workshop series covering Trust Boundary, Secure by Design Guardrails, Supply Chain Integrity, and Operational Response — proving DevSecOps is a closed-loop operating model in the AI-native era.",
+    "pages_url": "agentic-devsecops",
+    "repo_url": "https://github.com/shinyay/agentic-devsecops-trust-boundry",
+    "language": "Multi",
+    "difficulty": "Beginner → Intermediate",
+    "duration": "2-3 hours (total)",
+    "total_steps": 12,
+    "chapters": "4 workshops × 3 exercises",
+    "key_skills": ["Data Residency", "GHAS", "Copilot Autofix", "Security Campaigns", "OIDC", "Attestation", "Defender for Cloud", "SRE Agent", "MTTR"],
+    "highlights": [
+      "Trust boundary with Data Residency (Japan)",
+      "3-layer guardrails: Design → Policy → Detection",
+      "Supply chain integrity: OIDC + attestation + Defender",
+      "Closed-loop: incident → feedback → stronger system"
+    ],
+    "icon": "🔐",
+    "accent": "#da3633"
+  },
+  {
     "id": "agentic-github-workshop",
     "title": "Agentic GitHub Workshop",
     "subtitle": "6-Layer Architecture × 3 Surfaces",

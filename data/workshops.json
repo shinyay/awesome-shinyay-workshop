@@ -718,5 +718,53 @@
     "updated_at": "2025-06-05",
     "category": "devops-containers",
     "topics": ["jenkins", "docker", "ci-cd"]
+  },
+  {
+    "name": "agentic-devsecops-trust-boundry",
+    "full_name": "shinyay/agentic-devsecops-trust-boundry",
+    "description": "Define WHERE your development trust lives — Data Residency, EMU, branch protections, and Copilot boundary enforcement.",
+    "html_url": "https://github.com/shinyay/agentic-devsecops-trust-boundry",
+    "language": "Python",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-03-22",
+    "category": "devsecops",
+    "topics": ["devsecops", "trust-boundary", "data-residency", "copilot"]
+  },
+  {
+    "name": "agentic-devsecops-secure-by-design",
+    "full_name": "shinyay/agentic-devsecops-secure-by-design",
+    "description": "Build three layers of security guardrails — Design, Policy, and Detection — with GHAS, rulesets, and Copilot Autofix.",
+    "html_url": "https://github.com/shinyay/agentic-devsecops-secure-by-design",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-03-22",
+    "category": "devsecops",
+    "topics": ["devsecops", "ghas", "code-scanning", "copilot-autofix"]
+  },
+  {
+    "name": "agentic-devsecops-supplychain-integrity",
+    "full_name": "shinyay/agentic-devsecops-supplychain-integrity",
+    "description": "Secure the path from source to runtime — OIDC, artifact attestations, and Defender for Cloud code-to-runtime tracing.",
+    "html_url": "https://github.com/shinyay/agentic-devsecops-supplychain-integrity",
+    "language": "JavaScript",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-03-22",
+    "category": "devsecops",
+    "topics": ["devsecops", "supply-chain", "oidc", "attestation", "defender"]
+  },
+  {
+    "name": "agentic-devsecops-operational-response",
+    "full_name": "shinyay/agentic-devsecops-operational-response",
+    "description": "Close the DevSecOps loop — runtime incident detection, AI-assisted MTTR, and continuous improvement feedback.",
+    "html_url": "https://github.com/shinyay/agentic-devsecops-operational-response",
+    "language": "YAML",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-03-22",
+    "category": "devsecops",
+    "topics": ["devsecops", "incident-response", "sre-agent", "mttr", "copilot"]
   }
 ]
