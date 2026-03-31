@@ -66,26 +66,26 @@
     "accent": "#bf8700"
   },
   {
-    "id": "getting-started-with-copilot-cli-v0.0.411",
+    "id": "getting-started-with-copilot-cli-v1.0.13",
     "title": "Copilot CLI Workshop",
-    "subtitle": "Terminal-First AI Development",
-    "description": "Get hands-on with GitHub Copilot in the CLI. Learn to use Copilot for code explanation, shell command generation, Git operations, and terminal-first development workflows.",
-    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-cli-v0.0.411/",
-    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-cli-v0.0.411",
-    "language": "Shell",
-    "difficulty": "Beginner",
-    "duration": "~1 hour",
-    "total_steps": 5,
-    "chapters": "5 step-by-step exercises",
-    "key_skills": ["Copilot CLI", "Shell Commands", "Code Explanation", "Git Workflows", "Terminal Productivity"],
+    "subtitle": "From First Launch to Advanced Automation",
+    "description": "A progressive 9-level curriculum with 108 hands-on exercises. Master GitHub Copilot CLI from read-only exploration through planning, code changes, test execution, full SDLC workflows, customization, and advanced delegation.",
+    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-cli-v1.0.13/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-cli-v1.0.13",
+    "language": "Python",
+    "difficulty": "Beginner → Advanced",
+    "duration": "10–15 hours",
+    "total_steps": 108,
+    "chapters": "9 levels × 12 exercises (108 total)",
+    "key_skills": ["Interactive UI & Context", "Code Understanding", "Plan Mode", "Write Operations & Diff/Review", "Test & Lint Execution", "Full SDLC Workflows", "Custom Instructions & MCP", "Permissions & Delegation", "Extensions & SDK"],
     "highlights": [
-      "Install and configure Copilot CLI",
-      "Natural language → shell commands",
-      "Code explanation in terminal",
-      "AI-assisted Git workflows"
+      "108 exercises across 9 progressive levels",
+      "9 unique sample apps (Python, TypeScript, Bash)",
+      "Intentional bugs for guided discovery",
+      "From read-only to autonomous agent delegation"
     ],
     "icon": "💻",
-    "accent": "#0969da"
+    "accent": "#8534F3"
   },
   {
     "id": "getting-started-with-copilot-sdk-v0.1.32",

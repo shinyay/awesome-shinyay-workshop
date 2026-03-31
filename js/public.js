@@ -174,10 +174,10 @@ function renderPaths() {
   const paths = [
     {
       icon: '⚡',
-      title: 'Quick Start (1 hour)',
-      desc: 'Get productive with Copilot CLI in under an hour. Perfect for your first hands-on experience.',
-      workshops: [{ id: 'getting-started-with-copilot-cli-v0.0.411', label: 'Copilot CLI Workshop' }],
-      duration: '~1 hour'
+      title: 'Quick Start (2 hours)',
+      desc: 'Get started with Copilot CLI — cover the fundamentals of read-only exploration and code understanding.',
+      workshops: [{ id: 'getting-started-with-copilot-cli-v1.0.13', label: 'Copilot CLI Workshop' }],
+      duration: '~2 hours'
     },
     {
       icon: '🤖',
@@ -204,7 +204,7 @@ function renderPaths() {
       title: 'Complete Mastery (20+ hours)',
       desc: 'The full curriculum. Cover every aspect of GitHub Copilot from CLI basics to production agents.',
       workshops: [
-        { id: 'getting-started-with-copilot-cli-v0.0.411', label: 'Copilot CLI' },
+        { id: 'getting-started-with-copilot-cli-v1.0.13', label: 'Copilot CLI' },
         { id: 'agentic-github-workshop', label: 'Agentic Workshop' },
         { id: 'getting-started-with-agent-framework', label: 'Agent Framework' },
         { id: 'getting-started-with-spec-kit-v0.3.0', label: 'Spec Kit' },
