@@ -12,16 +12,16 @@
     "topics": ["copilot", "cli", "ai", "workshop", "tutorial"]
   },
   {
-    "name": "getting-started-with-copilot-sdk-v0.1.25",
-    "full_name": "shinyay/getting-started-with-copilot-sdk-v0.1.25",
-    "description": "Hands-on exploration of the Copilot SDK — build custom AI-powered tools and extensions.",
-    "html_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.1.25",
+    "name": "getting-started-with-copilot-sdk-v0.2.0",
+    "full_name": "shinyay/getting-started-with-copilot-sdk-v0.2.0",
+    "description": "A progressive 8-level curriculum with 96 hands-on exercises — from your first API call to building production-ready AI assistants.",
+    "html_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.2.0",
     "language": "TypeScript",
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-02-19",
+    "updated_at": "2026-04-01",
     "category": "copilot-ai",
-    "topics": ["copilot", "sdk", "typescript"]
+    "topics": ["copilot", "sdk", "typescript", "workshop"]
   },
   {
     "name": "getting-started-with-spec-kit",

@@ -195,7 +195,7 @@ function renderPaths() {
       desc: 'Go deep: Specification-Driven Development + build your own Copilot Extension with the SDK.',
       workshops: [
         { id: 'getting-started-with-spec-kit-v0.3.0', label: 'Spec Kit (SDD)' },
-        { id: 'getting-started-with-copilot-sdk-v0.1.32', label: 'Copilot SDK' }
+        { id: 'getting-started-with-copilot-sdk-v0.2.0', label: 'Copilot SDK' }
       ],
       duration: '~14 hours'
     },
@@ -208,7 +208,7 @@ function renderPaths() {
         { id: 'agentic-github-workshop', label: 'Agentic Workshop' },
         { id: 'getting-started-with-agent-framework', label: 'Agent Framework' },
         { id: 'getting-started-with-spec-kit-v0.3.0', label: 'Spec Kit' },
-        { id: 'getting-started-with-copilot-sdk-v0.1.32', label: 'Copilot SDK' }
+        { id: 'getting-started-with-copilot-sdk-v0.2.0', label: 'Copilot SDK' }
       ],
       duration: '20+ hours'
     }

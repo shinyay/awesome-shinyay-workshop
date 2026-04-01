@@ -88,12 +88,12 @@
     "accent": "#8534F3"
   },
   {
-    "id": "getting-started-with-copilot-sdk-v0.1.32",
+    "id": "getting-started-with-copilot-sdk-v0.2.0",
     "title": "Copilot SDK Workshop",
     "subtitle": "Build Copilot Extensions",
     "description": "A progressive 8-level curriculum teaching the GitHub Copilot Extensions SDK with TypeScript and Node.js. From basic connections to production-ready agents with tools, hooks, and MCP integration.",
-    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-sdk-v0.1.32/",
-    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.1.32",
+    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-sdk-v0.2.0/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.2.0",
     "language": "TypeScript",
     "difficulty": "Beginner → Expert",
     "duration": "12–15 hours",
