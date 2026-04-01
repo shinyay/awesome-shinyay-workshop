@@ -30,9 +30,9 @@
     "repo_url": "https://github.com/shinyay/getting-started-with-agent-framework",
     "language": "Python",
     "difficulty": "Intermediate",
-    "duration": "~2 hours",
-    "total_steps": 16,
-    "chapters": "16 exercises across infrastructure & demos",
+    "duration": "~5 hours",
+    "total_steps": 7,
+    "chapters": "7 progressive exercises",
     "key_skills": ["Agent Framework", "Infrastructure Setup", "Demo Scenarios", "Cheat Sheets", "Agent Lifecycle"],
     "highlights": [
       "Agent infrastructure from scratch",
@@ -97,12 +97,12 @@
     "language": "TypeScript",
     "difficulty": "Beginner → Expert",
     "duration": "12–15 hours",
-    "total_steps": 8,
+    "total_steps": 96,
     "chapters": "8 progressive levels, 96 exercises",
     "key_skills": ["Copilot Extensions SDK", "TypeScript", "Tool Integration", "Lifecycle Hooks", "MCP Protocol", "Production Patterns"],
     "highlights": [
       "96 exercises across 8 levels",
-      "2,720-line conceptual guide",
+      "2,800+ line conceptual guide",
       "Progressive: Connect → Stream → Tools → Production",
       "MCP protocol integration"
     ],
@@ -119,8 +119,8 @@
     "language": "Multi",
     "difficulty": "Beginner → Intermediate",
     "duration": "2-3 hours (total)",
-    "total_steps": 12,
-    "chapters": "4 workshops × 3 exercises",
+    "total_steps": 13,
+    "chapters": "4 workshops, 13 exercises",
     "key_skills": ["Data Residency", "GHAS", "Copilot Autofix", "Security Campaigns", "OIDC", "Attestation", "Defender for Cloud", "SRE Agent", "MTTR"],
     "highlights": [
       "Trust boundary with Data Residency (Japan)",

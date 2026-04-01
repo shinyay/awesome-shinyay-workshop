@@ -240,7 +240,7 @@ function renderPaths() {
 
 // --- Stats Animation ---
 function animateStats() {
-  const totalHours = 20;
+  const totalHours = 30;
   const totalSteps = workshops.reduce((sum, w) => sum + (w.total_steps || 0), 0);
   animate('stat-workshops', workshops.length);
   animate('stat-steps', totalSteps);
