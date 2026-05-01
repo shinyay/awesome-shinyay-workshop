@@ -185,7 +185,8 @@ function renderPaths() {
       desc: 'Master autonomous agents: cloud-side execution, Mission Control, hybrid workflows, and the Agent Framework.',
       workshops: [
         { id: 'agentic-github-workshop', label: 'Agentic GitHub Workshop' },
-        { id: 'getting-started-with-agent-framework', label: 'Agent Framework' }
+        { id: 'getting-started-with-agent-framework', label: 'Agent Framework' },
+        { id: 'ghcp-6-layer-agentic-platform', label: '6-Layer Agentic Platform' }
       ],
       duration: '~4 hours'
     },
@@ -206,6 +207,7 @@ function renderPaths() {
       workshops: [
         { id: 'getting-started-with-copilot-cli-v1.0.39', label: 'Copilot CLI' },
         { id: 'agentic-github-workshop', label: 'Agentic Workshop' },
+        { id: 'ghcp-6-layer-agentic-platform', label: '6-Layer Agentic Platform' },
         { id: 'getting-started-with-agent-framework', label: 'Agent Framework' },
         { id: 'getting-started-with-spec-kit-v0.8.3', label: 'Spec Kit' },
         { id: 'getting-started-with-copilot-sdk-v0.3.0', label: 'Copilot SDK' }

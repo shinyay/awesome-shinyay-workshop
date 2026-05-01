@@ -36,6 +36,18 @@
     "topics": ["copilot", "spec-kit", "specification", "sdd", "workshop"]
   },
   {
+    "name": "ghcp-6-layer-agentic-platform",
+    "full_name": "shinyay/ghcp-6-layer-agentic-platform",
+    "description": "Self-paced workshop building GitHub Copilot's 6-layer Agentic Platform from a single Issue Triage SKILL.md across Step 0–6.",
+    "html_url": "https://github.com/shinyay/ghcp-6-layer-agentic-platform",
+    "language": "Markdown",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-05-01",
+    "category": "copilot-ai",
+    "topics": ["copilot", "agentic", "skills", "gh-aw", "workshop", "bilingual"]
+  },
+  {
     "name": "getting-started-with-spec-kit",
     "full_name": "shinyay/getting-started-with-spec-kit",
     "description": "Spec-driven development with Spec Kit — stop vibe coding, start specifying.",

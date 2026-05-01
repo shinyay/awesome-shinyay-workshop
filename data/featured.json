@@ -22,6 +22,28 @@
     "accent": "#8534F3"
   },
   {
+    "id": "ghcp-6-layer-agentic-platform",
+    "title": "6-Layer Agentic Platform Workshop",
+    "subtitle": "Issue Triage Skill — Step 0 → 6",
+    "description": "Build GitHub Copilot's 6-layer Agentic Platform layer-by-layer through one Issue Triage scenario. Start from MCP setup, grow a SKILL.md, run it across CLI / IDE / Cloud Agent, automate with gh aw, and gate it with Required Reviews.",
+    "pages_url": "https://shinyay.github.io/ghcp-6-layer-agentic-platform/",
+    "repo_url": "https://github.com/shinyay/ghcp-6-layer-agentic-platform",
+    "language": "Markdown",
+    "difficulty": "Beginner → Intermediate",
+    "duration": "~2–3 hours",
+    "total_steps": 7,
+    "chapters": "7 Steps across 6 Layers",
+    "key_skills": ["MCP", "Copilot Memory", "SKILL.md", "AGENTS.md", "Copilot CLI", "Cloud Agent", "gh aw", "Multi-engine", "Required Review Gate"],
+    "highlights": [
+      "Build all 6 Copilot layers from one SKILL.md",
+      "Bilingual EN / 日本語 site with toggle",
+      "Codespaces 1-click (gh, gh aw, jq pre-installed)",
+      "Keynote CTA: publish your first Skill"
+    ],
+    "icon": "🪜",
+    "accent": "#1f6feb"
+  },
+  {
     "id": "getting-started-with-agent-framework",
     "title": "Agent Framework Workshop",
     "subtitle": "Build Autonomous Coding Agents",
