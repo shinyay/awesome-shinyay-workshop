@@ -1,27 +1,39 @@
 [
   {
-    "name": "getting-started-with-copilot-cli-v1.0.13",
-    "full_name": "shinyay/getting-started-with-copilot-cli-v1.0.13",
+    "name": "getting-started-with-copilot-cli-v1.0.39",
+    "full_name": "shinyay/getting-started-with-copilot-cli-v1.0.39",
     "description": "A progressive 9-level, 108-exercise curriculum for mastering GitHub Copilot CLI — from first launch to building custom extensions.",
-    "html_url": "https://github.com/shinyay/getting-started-with-copilot-cli-v1.0.13",
+    "html_url": "https://github.com/shinyay/getting-started-with-copilot-cli-v1.0.39",
     "language": "Python",
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-03-30",
+    "updated_at": "2026-05-01",
     "category": "copilot-ai",
     "topics": ["copilot", "cli", "ai", "workshop", "tutorial"]
   },
   {
-    "name": "getting-started-with-copilot-sdk-v0.2.0",
-    "full_name": "shinyay/getting-started-with-copilot-sdk-v0.2.0",
+    "name": "getting-started-with-copilot-sdk-v0.3.0",
+    "full_name": "shinyay/getting-started-with-copilot-sdk-v0.3.0",
     "description": "A progressive 8-level curriculum with 96 hands-on exercises — from your first API call to building production-ready AI assistants.",
-    "html_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.2.0",
+    "html_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.3.0",
     "language": "TypeScript",
     "stargazers_count": 0,
     "forks_count": 0,
-    "updated_at": "2026-04-01",
+    "updated_at": "2026-05-01",
     "category": "copilot-ai",
     "topics": ["copilot", "sdk", "typescript", "workshop"]
+  },
+  {
+    "name": "getting-started-with-spec-kit-v0.8.3",
+    "full_name": "shinyay/getting-started-with-spec-kit-v0.8.3",
+    "description": "Master Specification-Driven Development (SDD) with GitHub Copilot Spec Kit — 18 real-world scenarios across 4 difficulty tiers.",
+    "html_url": "https://github.com/shinyay/getting-started-with-spec-kit-v0.8.3",
+    "language": "Markdown",
+    "stargazers_count": 0,
+    "forks_count": 0,
+    "updated_at": "2026-05-01",
+    "category": "copilot-ai",
+    "topics": ["copilot", "spec-kit", "specification", "sdd", "workshop"]
   },
   {
     "name": "getting-started-with-spec-kit",

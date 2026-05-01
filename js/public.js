@@ -176,7 +176,7 @@ function renderPaths() {
       icon: '⚡',
       title: 'Quick Start (2 hours)',
       desc: 'Get started with Copilot CLI — cover the fundamentals of read-only exploration and code understanding.',
-      workshops: [{ id: 'getting-started-with-copilot-cli-v1.0.13', label: 'Copilot CLI Workshop' }],
+      workshops: [{ id: 'getting-started-with-copilot-cli-v1.0.39', label: 'Copilot CLI Workshop' }],
       duration: '~2 hours'
     },
     {
@@ -194,8 +194,8 @@ function renderPaths() {
       title: 'Build & Extend (14 hours)',
       desc: 'Go deep: Specification-Driven Development + build your own Copilot Extension with the SDK.',
       workshops: [
-        { id: 'getting-started-with-spec-kit-v0.3.0', label: 'Spec Kit (SDD)' },
-        { id: 'getting-started-with-copilot-sdk-v0.2.0', label: 'Copilot SDK' }
+        { id: 'getting-started-with-spec-kit-v0.8.3', label: 'Spec Kit (SDD)' },
+        { id: 'getting-started-with-copilot-sdk-v0.3.0', label: 'Copilot SDK' }
       ],
       duration: '~14 hours'
     },
@@ -204,11 +204,11 @@ function renderPaths() {
       title: 'Complete Mastery (20+ hours)',
       desc: 'The full curriculum. Cover every aspect of GitHub Copilot from CLI basics to production agents.',
       workshops: [
-        { id: 'getting-started-with-copilot-cli-v1.0.13', label: 'Copilot CLI' },
+        { id: 'getting-started-with-copilot-cli-v1.0.39', label: 'Copilot CLI' },
         { id: 'agentic-github-workshop', label: 'Agentic Workshop' },
         { id: 'getting-started-with-agent-framework', label: 'Agent Framework' },
-        { id: 'getting-started-with-spec-kit-v0.3.0', label: 'Spec Kit' },
-        { id: 'getting-started-with-copilot-sdk-v0.2.0', label: 'Copilot SDK' }
+        { id: 'getting-started-with-spec-kit-v0.8.3', label: 'Spec Kit' },
+        { id: 'getting-started-with-copilot-sdk-v0.3.0', label: 'Copilot SDK' }
       ],
       duration: '20+ hours'
     }

@@ -44,12 +44,12 @@
     "accent": "#1a7f37"
   },
   {
-    "id": "getting-started-with-spec-kit-v0.3.0",
+    "id": "getting-started-with-spec-kit-v0.8.3",
     "title": "Spec Kit Workshop",
     "subtitle": "Specification-Driven Development",
     "description": "Master Specification-Driven Development (SDD) with GitHub Copilot Spec Kit. Work through 18 real-world scenarios across 4 difficulty levels — from basic CRUD to expert-level distributed systems.",
-    "pages_url": "https://shinyay.github.io/getting-started-with-spec-kit-v0.3.0/",
-    "repo_url": "https://github.com/shinyay/getting-started-with-spec-kit-v0.3.0",
+    "pages_url": "https://shinyay.github.io/getting-started-with-spec-kit-v0.8.3/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-spec-kit-v0.8.3",
     "language": "Markdown/SDD",
     "difficulty": "Beginner → Expert",
     "duration": "90–120 min/scenario",
@@ -66,12 +66,12 @@
     "accent": "#bf8700"
   },
   {
-    "id": "getting-started-with-copilot-cli-v1.0.13",
+    "id": "getting-started-with-copilot-cli-v1.0.39",
     "title": "Copilot CLI Workshop",
     "subtitle": "From First Launch to Advanced Automation",
     "description": "A progressive 9-level curriculum with 108 hands-on exercises. Master GitHub Copilot CLI from read-only exploration through planning, code changes, test execution, full SDLC workflows, customization, and advanced delegation.",
-    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-cli-v1.0.13/",
-    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-cli-v1.0.13",
+    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-cli-v1.0.39/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-cli-v1.0.39",
     "language": "Python",
     "difficulty": "Beginner → Advanced",
     "duration": "10–15 hours",
@@ -88,12 +88,12 @@
     "accent": "#8534F3"
   },
   {
-    "id": "getting-started-with-copilot-sdk-v0.2.0",
+    "id": "getting-started-with-copilot-sdk-v0.3.0",
     "title": "Copilot SDK Workshop",
     "subtitle": "Build Copilot Extensions",
     "description": "A progressive 8-level curriculum teaching the GitHub Copilot Extensions SDK with TypeScript and Node.js. From basic connections to production-ready agents with tools, hooks, and MCP integration.",
-    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-sdk-v0.2.0/",
-    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.2.0",
+    "pages_url": "https://shinyay.github.io/getting-started-with-copilot-sdk-v0.3.0/",
+    "repo_url": "https://github.com/shinyay/getting-started-with-copilot-sdk-v0.3.0",
     "language": "TypeScript",
     "difficulty": "Beginner → Expert",
     "duration": "12–15 hours",
